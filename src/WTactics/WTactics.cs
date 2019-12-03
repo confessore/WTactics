@@ -7,13 +7,12 @@ namespace WTactics
 {
     public class WTactics
     {
-        readonly IServiceProvider services;
-
         public WTactics()
         {
-            services = ConfigureServices();
-            services.GetRequiredService<DawningMoon>().Run();
+            Services = ConfigureServices();
         }
+
+        public IServiceProvider Services { get; }
 
         IServiceProvider ConfigureServices()
         {

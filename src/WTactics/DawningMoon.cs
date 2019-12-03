@@ -47,7 +47,7 @@ namespace WTactics
             await registrationService.InitializeAsync();
             SpriteBatch = new SpriteBatch(GraphicsDevice);
             Camera = new Camera(SpriteBatch);
-            Textures.TerrainTextures = await contentService.LoadTerrainsAsync(Content);
+            TextureDictionaries.TerrainTextures = await contentService.LoadTerrainsAsync(Content);
             Map = await mapService.GenerateNewMapAsync();
             base.Initialize();
         }
