@@ -1,9 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Snowflake.Core;
 using System;
 using System.Threading.Tasks;
 using WTactics.Enums;
-using WTactics.Extensions;
 using WTactics.Models;
 using WTactics.Services.Interfaces;
 
@@ -28,7 +26,7 @@ namespace WTactics.Services
                     var tile = new Tile((Terrain)randomService.Random.Next(5), new Vector2(i, j), 0f)
                     {
                         Id = Guid.NewGuid(),
-                        CreatedAt = DateTimeOffset.Now
+                        CreatedAt = DateTimeOffset.UtcNow
                     };
                     map.Tiles.Add(tile);
                 }
