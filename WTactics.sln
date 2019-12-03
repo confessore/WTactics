@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C32D8023-CA44-4699-A7B7-46F06B71700D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{50A1A164-FC01-423E-B326-9C6CA82F3756}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WTactics", "src\WTactics\WTactics.csproj", "{C3B69FBF-CF7B-460B-A2CA-8F3B748D59F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTactics.Android", "src\WTactics.Android\WTactics.Android.csproj", "{BA763625-EE02-49BC-9E62-10808441E6B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WTactics.Debug", "src\WTactics.Debug\WTactics.Debug.csproj", "{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WTactics.Shared", "src\WTactics.Shared\WTactics.Shared.shproj", "{88A502DB-0B4A-4D27-B007-BDEA2FEBE9C1}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\WTactics.Shared\WTactics.Shared.projitems*{88a502db-0b4a-4d27-b007-bdea2febe9c1}*SharedItemsImports = 13
+		src\WTactics.Shared\WTactics.Shared.projitems*{ba763625-ee02-49bc-9e62-10808441e6b5}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3B69FBF-CF7B-460B-A2CA-8F3B748D59F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B69FBF-CF7B-460B-A2CA-8F3B748D59F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B69FBF-CF7B-460B-A2CA-8F3B748D59F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B69FBF-CF7B-460B-A2CA-8F3B748D59F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA763625-EE02-49BC-9E62-10808441E6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA763625-EE02-49BC-9E62-10808441E6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA763625-EE02-49BC-9E62-10808441E6B5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA763625-EE02-49BC-9E62-10808441E6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA763625-EE02-49BC-9E62-10808441E6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA763625-EE02-49BC-9E62-10808441E6B5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50A1A164-FC01-423E-B326-9C6CA82F3756} = {C32D8023-CA44-4699-A7B7-46F06B71700D}
+		{C3B69FBF-CF7B-460B-A2CA-8F3B748D59F3} = {50A1A164-FC01-423E-B326-9C6CA82F3756}
+		{BA763625-EE02-49BC-9E62-10808441E6B5} = {50A1A164-FC01-423E-B326-9C6CA82F3756}
+		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E} = {50A1A164-FC01-423E-B326-9C6CA82F3756}
+		{88A502DB-0B4A-4D27-B007-BDEA2FEBE9C1} = {50A1A164-FC01-423E-B326-9C6CA82F3756}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E48E8266-4B74-4BC9-A439-6BDCB83C6471}
+	EndGlobalSection
+EndGlobal
