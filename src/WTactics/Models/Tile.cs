@@ -21,7 +21,7 @@ namespace WTactics.Models
             Rotation = rotation;
             Unit = unit;
             Item = item;
-            Sprite = Textures.TerrainTextures[Terrain];
+            Sprite = TextureDictionaries.TerrainTextures[Terrain];
         }
 
         public Location Location { get; set; }

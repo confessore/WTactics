@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System.Threading.Tasks;
 
 namespace WTactics.Debug
 {
@@ -9,7 +10,7 @@ namespace WTactics.Debug
 
         async Task MainAsync()
         {
-            new WTactics();
+            new WTactics().Services.GetRequiredService<DawningMoon>().Run();
             await Task.Delay(-1);
         }
     }
