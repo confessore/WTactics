@@ -10,27 +10,49 @@ namespace WTactics.Services
 {
     public class ContentService : IContentService
     {
-        public Task<Dictionary<Terrain, (Texture2D, Vector2)>> LoadTerrainsAsync(ContentManager contentManager)
+        public Task<Dictionary<MenuOption, (Texture2D, Vector2)>> LoadMenuTexturesAsync(ContentManager contentManager)
         {
-            var terrains = contentManager.Load<Texture2D>("terrains");
-            return Task.FromResult(new Dictionary<Terrain, (Texture2D, Vector2)>
+            var menu = contentManager.Load<Texture2D>("menu");
+            return Task.FromResult(new Dictionary<MenuOption, (Texture2D, Vector2)>
             {
-                { Terrain.Air, (terrains, new Vector2(0, 0)) },
-                { Terrain.Earth, (terrains, new Vector2(1, 0)) },
-                { Terrain.Fire, (terrains, new Vector2(2, 0)) },
-                { Terrain.Life, (terrains, new Vector2(3, 0)) },
-                { Terrain.Water, (terrains, new Vector2(0, 1)) },
+                { MenuOption.Play, (menu, new Vector2(0, 0)) },
+                { MenuOption.Options, (menu, new Vector2(0, 1)) },
+                { MenuOption.Exit, (menu, new Vector2(0, 2)) },
             });
         }
 
-        public Task<Dictionary<Job, (Texture2D, Vector2)>> LoadJobsAsync(ContentManager contentManager)
+        public Task<Dictionary<MenuOption, (Texture2D, Vector2)>> LoadGMenuTexturesAsync(ContentManager contentManager)
         {
-            var jobs = contentManager.Load<Texture2D>("jobs");
+            var gmenu = contentManager.Load<Texture2D>("gmenu");
+            return Task.FromResult(new Dictionary<MenuOption, (Texture2D, Vector2)>
+            {
+                { MenuOption.Play, (gmenu, new Vector2(0, 0)) },
+                { MenuOption.Options, (gmenu, new Vector2(0, 1)) },
+                { MenuOption.Exit, (gmenu, new Vector2(0, 2)) },
+            });
+        }
+
+        public Task<Dictionary<Terrain, (Texture2D, Vector2)>> LoadTerrainTexturesAsync(ContentManager contentManager)
+        {
+            var terrain = contentManager.Load<Texture2D>("terrain");
+            return Task.FromResult(new Dictionary<Terrain, (Texture2D, Vector2)>
+            {
+                { Terrain.Air, (terrain, new Vector2(0, 0)) },
+                { Terrain.Earth, (terrain, new Vector2(1, 0)) },
+                { Terrain.Fire, (terrain, new Vector2(2, 0)) },
+                { Terrain.Life, (terrain, new Vector2(3, 0)) },
+                { Terrain.Water, (terrain, new Vector2(0, 1)) },
+            });
+        }
+
+        public Task<Dictionary<Job, (Texture2D, Vector2)>> LoadJobTexturesAsync(ContentManager contentManager)
+        {
+            var job = contentManager.Load<Texture2D>("job");
             return Task.FromResult(new Dictionary<Job, (Texture2D, Vector2)>
             {
-                { Job.BlackMage, (jobs, new Vector2(0, 0)) },
-                { Job.Chemist, (jobs, new Vector2(1, 0)) },
-                { Job.Squire, (jobs, new Vector2(2, 0)) },
+                { Job.BlackMage, (job, new Vector2(0, 0)) },
+                { Job.Chemist, (job, new Vector2(1, 0)) },
+                { Job.Squire, (job, new Vector2(2, 0)) },
             });
         }
     }

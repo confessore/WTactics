@@ -9,7 +9,9 @@ namespace WTactics.Services.Interfaces
 {
     public interface IContentService
     {
-        Task<Dictionary<Terrain, (Texture2D, Vector2)>> LoadTerrainsAsync(ContentManager contentManager);
-        Task<Dictionary<Job, (Texture2D, Vector2)>> LoadJobsAsync(ContentManager contentManager);
+        Task<Dictionary<MenuOption, (Texture2D, Vector2)>> LoadMenuTexturesAsync(ContentManager contentManager);
+        Task<Dictionary<MenuOption, (Texture2D, Vector2)>> LoadGMenuTexturesAsync(ContentManager contentManager);
+        Task<Dictionary<Terrain, (Texture2D, Vector2)>> LoadTerrainTexturesAsync(ContentManager contentManager);
+        Task<Dictionary<Job, (Texture2D, Vector2)>> LoadJobTexturesAsync(ContentManager contentManager);
     }
 }

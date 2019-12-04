@@ -23,6 +23,7 @@ namespace WTactics.Services
         {
             services.GetRequiredService<IRandomService>();
             services.GetRequiredService<IContentService>();
+            services.GetRequiredService<IMenuService>();
             services.GetRequiredService<ITileService>();
             services.GetRequiredService<IMapService>();
             services.GetRequiredService<IEventService>();

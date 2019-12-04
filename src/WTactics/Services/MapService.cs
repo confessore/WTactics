@@ -31,8 +31,6 @@ namespace WTactics.Services
                     map.Tiles.Add(tile);
                 }
             }
-            foreach (var tile in map.Tiles)
-                Console.WriteLine($"{tile.Id} {tile.CreatedAt}");
             return Task.FromResult(map);
         }
     }

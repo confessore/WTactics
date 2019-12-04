@@ -28,13 +28,29 @@ namespace WTactics.Models.Abstractions
             return Task.CompletedTask;
         }
 
-        public Task Draw(SpriteBatch spriteBatch)
+        public Task Draw16x16(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(
                 Sprite.texture,
                 Position,
                 new Rectangle((16 * Sprite.position).ToPoint(),
                 (Vector2.One * 16).ToPoint()),
+                Color.White,
+                Rotation,
+                new Vector2(Origin) * 8,
+                new Vector2(Scale),
+                SpriteEffects.None,
+                0);
+            return Task.CompletedTask;
+        }
+
+        public Task Draw64x16(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(
+                Sprite.texture,
+                Position,
+                new Rectangle((16 * Sprite.position).ToPoint(),
+                (Vector2.One * 64).ToPoint()),
                 Color.White,
                 Rotation,
                 new Vector2(Origin) * 8,
