@@ -18,11 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WTactics.Debug", "src\WTact
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WTactics.Shared", "src\WTactics.Shared\WTactics.Shared.shproj", "{88A502DB-0B4A-4D27-B007-BDEA2FEBE9C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTactics.Android", "src\WTactics.Android\WTactics.Android.csproj", "{3DFCC6F7-BEA4-443C-8690-00EC93BBCAE3}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src\WTactics.Shared\WTactics.Shared.projitems*{3dfcc6f7-bea4-443c-8690-00ec93bbcae3}*SharedItemsImports = 4
 		src\WTactics.Shared\WTactics.Shared.projitems*{88a502db-0b4a-4d27-b007-bdea2febe9c1}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,12 +35,6 @@ Global
 		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3DFCC6F7-BEA4-443C-8690-00EC93BBCAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DFCC6F7-BEA4-443C-8690-00EC93BBCAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DFCC6F7-BEA4-443C-8690-00EC93BBCAE3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{3DFCC6F7-BEA4-443C-8690-00EC93BBCAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DFCC6F7-BEA4-443C-8690-00EC93BBCAE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3DFCC6F7-BEA4-443C-8690-00EC93BBCAE3}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,7 +44,6 @@ Global
 		{C3B69FBF-CF7B-460B-A2CA-8F3B748D59F3} = {50A1A164-FC01-423E-B326-9C6CA82F3756}
 		{4D342CDB-F86B-41F5-AE4E-5C9C7CB1745E} = {50A1A164-FC01-423E-B326-9C6CA82F3756}
 		{88A502DB-0B4A-4D27-B007-BDEA2FEBE9C1} = {50A1A164-FC01-423E-B326-9C6CA82F3756}
-		{3DFCC6F7-BEA4-443C-8690-00EC93BBCAE3} = {50A1A164-FC01-423E-B326-9C6CA82F3756}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E48E8266-4B74-4BC9-A439-6BDCB83C6471}

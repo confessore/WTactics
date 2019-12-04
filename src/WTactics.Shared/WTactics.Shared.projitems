@@ -9,7 +9,9 @@
     <Import_RootNamespace>WTactics.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="$(MSBuildThisFileDirectory)Content\terrains.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>

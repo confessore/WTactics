@@ -22,9 +22,9 @@ namespace WTactics.Services
             return Task.CompletedTask;
         }
 
-        public async Task UpdateTile(MouseState mouseState, Player player)
+        /*public async Task UpdateTile(MouseState mouseState, Player player)
         {
-            /*
+            
             var s2w = TTT.ScreenToWorld(mouseState.Position.ToVector2());
             var rect = new Rectangle((int)s2w.X, (int)s2w.Y, 1, 1);
             var tile = TTT.Map.Tiles.FirstOrDefault(x => rect.Intersects(x.SpriteRectangle));
@@ -34,12 +34,12 @@ namespace WTactics.Services
                 await tile.Update(player);
                 TTT.Map.Tiles.Add(tile);
                 await eventService.IsGameOver(TTT.Map);
-            }*/
+            }
         }
 
         public async Task UpdateRandomTile(Player player)
         {
-            /*var tiles = TTT.Map.Tiles.Where(x => x.Player == Player.None);
+            var tiles = TTT.Map.Tiles.Where(x => x.Player == Player.None);
             var tile = tiles.ElementAtOrDefault(TTT.Random.Next(0, tiles.Count()));
             if (tile != null && tile.Player == Player.None)
             {
@@ -47,7 +47,7 @@ namespace WTactics.Services
                 await tile.Update(player);
                 TTT.Map.Tiles.Add(tile);
                 await eventService.IsGameOver(TTT.Map);
-            }*/
-        }
+            }
+        }*/
     }
 }
